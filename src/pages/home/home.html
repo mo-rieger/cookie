@@ -7,8 +7,8 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <form>
+    <input #recipeLink type="text" placeholder="Paste link to your recipe">
+    <button (click)="getRecipe(recipeLink.value)">start cooking</button>
+  </form>
 </ion-content>
