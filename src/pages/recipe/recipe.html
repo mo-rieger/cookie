@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Mr. Cookie
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <h1>{{recipe.name}}</h1>
+  <ion-grid>
+    <ion-row *ngIf="recipe.totalTime">
+      <ion-col col-12>
+        <ion-icon name="timer"></ion-icon> Total: {{recipe.totalTime.en}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6 *ngIf="recipe.prepTime">
+        Preparation: {{recipe.prepTime.en}}
+      </ion-col>
+      <ion-col col-6 *ngIf="recipe.cookTime">
+        Cook: {{recipe.cookTime.en}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h2>Ingredients</h2>
+  <button ion-button icon-only (click)="startReading(recipe.ingredients)">
+    <ion-icon name="play"></ion-icon>
+  </button>
+  <ion-list no-lines>
+    <span ion-item *ngFor="let ingredient of recipe.ingredients">
+      {{ ingredient }}
+    </span>
+  </ion-list>
+
+  <h2>Instructions</h2>
+  <button ion-button icon-only (click)="startReading(recipe.instructions)">
+    <ion-icon name="play"></ion-icon>
+  </button>
+  <ion-list no-lines>
+    <span ion-item *ngFor="let instruction of recipe.instructions; let i = index" [attr.data-index]="i">
+     {{i+1}}. {{ instruction }}
+    </span>
+  </ion-list>
+
+</ion-content>

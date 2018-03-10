@@ -1,14 +1,17 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Mr. Cookie
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <form>
-    <input #recipeLink type="text" placeholder="Paste link to your recipe">
-    <button (click)="getRecipe(recipeLink.value)">start cooking</button>
+    <ion-item>
+      <ion-label floating>Paste link to your recipe</ion-label>
+      <ion-input #recipeLink type="text"></ion-input>
+    </ion-item>
+    <button ion-button round outline (click)="getRecipe(recipeLink.value)">start cooking</button>
   </form>
 </ion-content>

@@ -4,8 +4,20 @@ export interface Recipe {
   yield: string
   ingredients: string[]
   instructions: string[]
-  totalTime: object
-  prepTime: object
-  cookTime: object
-  copyrighted?: object
+  totalTime: {
+    iso: string
+    en: string
+  }
+  prepTime: {
+    iso: string,
+    en: string
+  }
+  cookTime: {
+    iso: string,
+    en: string
+  }
+  copyrighted?: {
+    image: string
+    description: string
+  }
 }

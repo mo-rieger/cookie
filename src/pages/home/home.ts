@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {RecipeService} from "../../services/recipe.service";
-import {Recipe} from "../../models/recipe.model";
+import {RecipePage} from "../recipe/recipe";
 
 
 @Component({
@@ -12,11 +12,15 @@ import {Recipe} from "../../models/recipe.model";
 
 export class HomePage {
 
-  constructor(public navCtrl: NavController, private recipeService: RecipeService) {  }
+  constructor(public navCtrl: NavController, private recipeService: RecipeService) {
+  }
 
   getRecipe(recipeUrl: string) {
     this.recipeService.getRecipe(recipeUrl).subscribe(
-      data => {console.log(data)},
+      data => {
+        this.navCtrl.push(RecipePage, {
+          recipe: data
+        })},
       error => {console.log(error)})
   }
 }

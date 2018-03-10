@@ -9,11 +9,14 @@ import { HttpClientModule } from '@angular/common/http'
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {RecipeService} from "../services/recipe.service";
+import {TextToSpeech} from "@ionic-native/text-to-speech";
+import {RecipePage} from "../pages/recipe/recipe";
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    RecipePage
   ],
   imports: [
     BrowserModule,
@@ -23,13 +26,15 @@ import {RecipeService} from "../services/recipe.service";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    RecipePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    RecipeService
+    RecipeService,
+    TextToSpeech
   ]
 })
 export class AppModule {}
