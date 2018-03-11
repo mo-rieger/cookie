@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 296 318" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-227,-156)">
+        <g transform="matrix(1,0,0,1,19.4116,-135.868)">
+            <g transform="matrix(1,0,0,0.934641,-716.412,3.34149)">
+                <rect x="991" y="469" width="162" height="153" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,-715,6)">
+                <circle cx="997.5" cy="435.5" r="74.5" style="fill:white;"/>
+                <g transform="matrix(1,0,0,1,146.177,0)">
+                    <circle cx="997.5" cy="435.5" r="74.5" style="fill:white;"/>
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,-641.912,-68.3121)">
+                <circle cx="997.5" cy="435.5" r="74.5" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,-714.912,6)">
+                <g transform="matrix(0.875,0,0,0.875,135.425,54.5)">
+                    <circle cx="1039" cy="544" r="12"/>
+                </g>
+                <g transform="matrix(0.875,0,0,0.875,187.325,54.5)">
+                    <circle cx="1039" cy="544" r="12"/>
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,-718,8)">
+                <g transform="matrix(0.690049,0,0,0.872478,353.265,7.68597)">
+                    <path d="M916,638.688C916,638.688 945.066,681.334 1006,681C1066.93,680.666 1041.31,611.925 994.677,638.688C948.047,665.451 916,638.688 916,638.688Z"/>
+                </g>
+                <g transform="matrix(-0.690049,0,0,0.872478,1793.91,7.68597)">
+                    <path d="M916,638.688C916,638.688 945.066,681.334 1006,681C1066.93,680.666 1041.31,611.925 994.677,638.688C948.047,665.451 916,638.688 916,638.688Z"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
