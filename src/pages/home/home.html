@@ -1,17 +1,11 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Mr. Cookie
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
-  <form>
-    <ion-item>
-      <ion-label floating>Paste link to your recipe</ion-label>
-      <ion-input #recipeLink type="text"></ion-input>
-    </ion-item>
-    <button ion-button round outline (click)="getRecipe(recipeLink.value)">start cooking</button>
-  </form>
+  <div class="cookielogo"></div>
+  <div class="cookietypo"></div>
+    <form>
+      <ion-item>
+        <ion-label floating>Paste link to your recipe</ion-label>
+        <ion-input #recipeLink type="text"></ion-input>
+      </ion-item>
+      <button ion-button round outline (click)="getRecipe(recipeLink.value)">start cooking</button>
+    </form>
 </ion-content>

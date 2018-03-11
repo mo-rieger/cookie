@@ -1,2 +1,88 @@
-page-home {
+$primary-color: #cf4057;
+$secondary-color: #ff8a1f;
+$cookielogourl: url(../../assets/imgs/mr-cookie-withoutshine.svg);
+$cookietypourl: url(../../assets/imgs/cookie-typo.svg);
+
+
+
+ion-content {
+  background-image:linear-gradient(20deg, $primary-color 30%, $secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.cookielogo {
+  width: 50vw;
+  display: block;
+  height: 30vh;
+  margin: 2em auto 2em;
+  background-repeat: no-repeat;
+  background-size: 50vw 30vh;
+  background-image: $cookielogourl;
+}
+
+.cookietypo {
+  width: 80vw;
+  display: block;
+  margin: 2em auto 2em;
+  background-repeat: no-repeat;
+  height: 15vh;
+  background-size: 80vw 15vh;
+  background-image: $cookietypourl;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 50vw;
+}
+
+/*
+
+@mixin margin-left($width) {
+  margin-left: (100vw - $width)/2;;
+}
+
+
+ion-content {
+  background-image:linear-gradient(20deg, $primary-color 30%, $secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%embed-img-center {
+  display: block;
+  height: 30vh;
+  margin: 2em auto 2em;
+  background-repeat: no-repeat;
+
+}
+
+.cookielogo {
+  @extend %embed-img-center;
+  $width: 50vw;
+  @include margin-left($width);
+
+  background-size: 50vw 30vh;
+  background-image: $cookielogourl;
+}
+
+.cookietypo {
+  @extend %embed-img-center;
+  $width: 80vw;
+  @include margin-left($width);
+
+  height: 15vh;
+  background-size: 80vw 15vh;
+  background-image: $cookietypourl;
+}
+
+
+
+*/
+
+
