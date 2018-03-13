@@ -1,11 +1,13 @@
 <ion-content padding>
-  <div class="cookielogo"></div>
-  <div class="cookietypo"></div>
-    <form>
-      <ion-item>
-        <ion-label floating>Paste link to your recipe</ion-label>
-        <ion-input #recipeLink type="text"></ion-input>
-      </ion-item>
-      <button ion-button round outline (click)="getRecipe(recipeLink.value)">start cooking</button>
-    </form>
+  <div class="center">
+    <div class="cookielogo"></div>
+    <div class="cookietypo"></div>
+      <form>
+        <ion-item>
+          <ion-label floating>Paste link to your recipe</ion-label>
+          <ion-input #recipeLink type="text"></ion-input>
+        </ion-item>
+        <button ion-button round outline (click)="getRecipe(recipeLink.value)">start cooking</button>
+      </form>
+  </div>
 </ion-content>

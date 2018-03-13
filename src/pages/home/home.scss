@@ -7,9 +7,13 @@ $cookietypourl: url(../../assets/imgs/cookie-typo.svg);
 
 ion-content {
   background-image:linear-gradient(20deg, $primary-color 30%, $secondary-color);
+}
+
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .cookielogo {
@@ -37,8 +41,12 @@ form {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  width: 50vw;
+  width: 85vw;
+  button {
+    margin-top: 15px !important;
+  }
 }
+
 
 /*
 

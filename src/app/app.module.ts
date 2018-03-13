@@ -11,6 +11,7 @@ import { HomePage } from '../pages/home/home';
 import {RecipeService} from "../services/recipe.service";
 import {TextToSpeech} from "@ionic-native/text-to-speech";
 import {RecipePage} from "../pages/recipe/recipe";
+import {SpeechRecognition} from "@ionic-native/speech-recognition";
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {RecipePage} from "../pages/recipe/recipe";
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RecipeService,
-    TextToSpeech
+    TextToSpeech,
+    SpeechRecognition
   ]
 })
 export class AppModule {}
